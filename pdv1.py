@@ -42,9 +42,7 @@ class fucker(threading.Thread):
     def run(self):
         global Close, Request, Tot_req
         self.Lock.acquire()
-        print ('[!] Starting thread {0}'.format(self.num))
         self.Lock.release()
-        time.sleep(1)
         while True:
             try:
                 self.request()
