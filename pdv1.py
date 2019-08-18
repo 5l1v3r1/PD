@@ -58,21 +58,21 @@ class MainLoop():
     def home(self):
         global Close, Request, Tot_req
         print \
-("""                  ____               ____  ____       ____
-                 |  _ \ __ _ ___ ___|  _ \|  _ \  ___/ ___|
-                 | |_) / _` / __/ __| | | | | | |/ _ \___ \ 
-                 |  __/ (_| \__ \__ \ |_| | |_| | (_) |__) |
-                 |_|   \__,_|___/___/____/|____/ \___/____/
+("""      ____               ____  ____       ____
+     |  _ \ __ _ ___ ___|  _ \|  _ \  ___/ ___|
+     | |_) / _` / __/ __| | | | | | |/ _ \___ \ 
+     |  __/ (_| \__ \__ \ |_| | |_| | (_) |__) |
+     |_|   \__,_|___/___/____/|____/ \___/____/
 """)
         try:
             url = input('[*] Target [http://victim.com]: ')
         except:
             url = input('[*] Target [http://victim.com]: ')
         try:
-            file_proxy = str(input('[*] Proxy: '))
+            file_proxy = str(input('[*] Proxy [proxy.txt]: '))
             in_file = open(file_proxy,"r")
         except:
-            file_proxy = str(input('[*] Proxy: '))
+            file_proxy = str(input('[*] Proxy [proxy.txt]: '))
             in_file = open(file_proxy,"r")
         num_threads = str(input('[*] Thread [1000]: '))
         if num_threads == "":
